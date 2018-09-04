@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Web</title>
+</head>
+
+<body>
+    <!--Header para indicar el espacio asisgnado al encabezado de la pagina.
+    Ahora utilizado para mostrar los elementos principales del top de la pagina.-->
+    <header>
+        <!--Seccionar bien el area a la cual pertenece el logo de la pagina
+        para poder trabajar con sus valores de forma individual-->
+        <div>
+            <a href="#">
+                <h1>HONG</h1>
+            </a>
+        </div>
+        <!--Nav: en este espacio se integrara la barrra de navegacion
+         de la pagina, separada por "secciones", por lo que cada "seccion"
+        se agregara como elemento de la lista siguiente. De esta forma se podran manipular estos elementos como conjunto-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">DESING/DEV</a>
+                    <ul>
+                        <li><a href="#">Opcion1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">TECHNOLOGY</a>
+                    <ul>
+                        <li><a href="#">Opcion1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">INSPIRATION</a>
+                    <ul>
+                        <li><a href="#">Opcion1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">SOCIAL COMMERCE</a>
+                    <ul>
+                        <li><a href="#">Opcion1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ALL</a>
+                    <ul>
+                        <li><a href="#">Opcion1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">DEALS</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Asignando apartado para la barra de busqueda de la pagina.-->
+        <div>
+            <input type="text" placeholder="Empezar a buscar.">
+        </div>
+        <hr>
+    </header>
+    <!--Section: para marcar el area donde se presentaran los elementos
+    publicados de la pagina (los articulos), funcionara como el contenedor de todo lo
+    publicado-->
+    <section>
+        <!-- article: utilizado para marcar lo publicado, la entrada 
+        agregada a la pagina web-->
+        <article>
+            <!--h1 Dar importancia al titulo de la publicacion-->
+            <h1>HTML5 Website Showcase</h1>
+            <p>By Diego. Publicado el
+                <!-- date y datetime: utilizado para especificar fecha y hora en la cual
+                se realizo la publicacion, asi mostrando resultados de busqueda los
+                cuales concuerden con tiempo de publicacion-->
+                <time datetime="2018-03-09 1:00"> 9 de septiembre de 2018</time>.
+            </p>
+            <!--Se le asigna un espacion (div) al contenido de la pagina
+            con la finalidad de manipularlo de la manera deseada sin afectar
+            a su titulo.-->
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, suscipit magni. Sunt accusantium sit atque!
+                    Eum minus aliquam mollitia consectetur optio, numquam, doloribus nihil repellendus asperiores, repudiandae
+                    vitae consequuntur quibusdam.Dolores dolore corrupti, temporibus eveniet magnam hic eius id odio impedit
+                    esse ea qui maiores a repellendus velit odit voluptatem in. Sunt, voluptas. Ipsa eaque repudiandae provident
+                    illum! Nisi, veniam.
+                </p>
+            </div>
+            <!--Se le asigna una seccion div al boton de comentario no solamente
+            para su manipulacion sino para marcar que se trata de otro punto en
+            la entrada (publicacion) de la pagina.-->
+            <div align="center">
+                <a href="#"><input type="button" value="Show Commets"></a>
+            </div>
+        </article>
+    </section>
+    <!--Aside para colocar los elementos no relacionados con la entrada a la pagina
+    con finalidad de asignarle una posicion exacta a todo su contenido a un lado de la entrada.-->
+    <aside>
+        <div>
+            <!--h3 Dar importancia al titulo de la publicacion-->
+            <h3>Stay Updated</h3>
+            <p>Get daily articles in your inbox for free.</p>
+            <form action="#" method="get">
+                <input type="email" placeholder="Insert your email">
+                <input type="submit" value="Subscribe!">
+            </form>
+        </div>
+        <div>
+            <!--h3 Dar importancia al titulo de la publicacion-->
+            <h3>You might</h3>
+            <!--Div para seccionar cada una de las entradas anteriores que se le presentan al lector.-->
+            <div>
+                <img src="img/imagen.jpg" alt="Imagen 1" width="50em">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed, maiores ad recusandae quam voluptate
+                    tenetur, nihil ducimus asperiores quasi laboriosam? Ratione aliquid mollitia quae nihil adipisci sequi
+                    autem illo!</p>
+            </div>
+            <!--Div para seccionar cada una de las entradas anteriores que se le presentan al lector.-->
+            <div>
+                <img src="img/imagen.jpg" alt="Imagen 2" width="50em">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed, maiores ad recusandae quam voluptate
+                    tenetur, nihil ducimus asperiores quasi laboriosam? Ratione aliquid mollitia quae nihil adipisci sequi
+                    autem illo!</p>
+            </div>
+            <!--Div para seccionar cada una de las entradas anteriores que se le presentan al lector.-->
+            <div>
+                <img src="img/imagen.jpg" alt="Imagen 3" width="50em">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed, maiores ad recusandae quam voluptate
+                    tenetur, nihil ducimus asperiores quasi laboriosam? Ratione aliquid mollitia quae nihil adipisci sequi
+                    autem illo!</p>
+            </div>
+        </div>
+    </aside>
+    <!--Footer: establecer la secccion del pie de pagina y asi marcar el
+    area en la que s eubicara su informacion como contacto, redes o Copyright-->
+    <footer>
+        <hr>
+        <!--Dentro de footer asignar secciones (div) a los elementos para su manipulacion, estilo y presentacion de la infromacion en este apartado.-->
+        <!--En este div, estilizar los elementos contenidos en el, como su ubicacion o tranformaciones-->
+        <div align="center">
+            <a href="#"><img src="img/githublogo.png" alt="Github" width="70em"></a>
+            <a href="#"><img src="img/sololearn.png" alt="SoloLearn" width="70em"></a>
+        </div>
+        <!--Dentro de footer asignar secciones (div) a los elementos para su manipulacion, estilo y presentacion de la infromacion en este apartado.-->
+        <div align="align">
+            © 2018, Diego Vega, Inc. Epic, Diego Vega, el logo de Diego Vega, son marcas comerciales o marcas registradas de Diego Vega,
+            Inc. tanto en El Salvador como en el resto del mundo. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>
